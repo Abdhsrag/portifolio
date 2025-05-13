@@ -91,7 +91,7 @@ nav{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,22 +243,67 @@ h1{
   }
 }
 
-.about{
+/* Make the about section responsive */
+.about {
   background-color: var(--clr-bg-gray);
-  height: 30vh;
-  margin-top: 50px;
+  height: auto; /* Allow height to adjust based on content */
+  margin-top: 60px;
   margin-bottom: 50px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding for smaller screens */
 }
 
+.about-container{
+  width: 100%;
+}
+
+/* Make the skills icons responsive */
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Add spacing between icons */
+}
+
+/* Adjust font sizes and layout for smaller screens */
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+
+  .skills-icons a {
+    font-size: 30px; /* Reduce icon size for smaller screens */
+  }
+
+  .about {
+    padding: 10px; /* Add more padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills h2 {
+    font-size: 25px; /* Further reduce font size for very small screens */
+  }
+
+  .skills-icons a {
+    font-size: 25px; /* Further reduce icon size */
+  }
+}
 .skills{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 40vh;
-  width: 80%;
+  height: 80%;
   margin: auto;
+  margin: 3rem;
 }
+
+
 
 .skills h2{
   font-family: var(--font-primary);
@@ -272,10 +317,11 @@ h1{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 
 .skills div a{
-  margin-right: 25px;
+  margin: 10px;
   color: var(--clr-red);
   font-size: 40px;
 }
