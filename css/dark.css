@@ -1,0 +1,11 @@
+:root:has(.mode:checked) {
+  --img-bg : url('../imgs/dr3.jpg');
+  --clr-white: #252525;
+  --clr-black: #fff;
+  --clr-red:#D41DC5;
+  --clr-red-hover:#d41dc5d7;
+  --clr-bg-gray: #202020;
+  --clr-card:#0f0f0f;
+  --crl-nav:#171717;
+  --crl-nav-items:white;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Way</title>
+
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dark.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5 logo" href="#">My Way</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto me-5 my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active items" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link items" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link items" href="#"> Contact </a>
+            </li>
+          </ul>
+          <div class="mode-group me-5">
+            <label for="mode" class="dark">
+              <i class="fa-solid fa-moon"></i>
+            </label>
+            <label for="mode" class="light">
+              <i class="fa-regular fa-sun"></i>
+            </label>
+            <input type="checkbox" id="mode" class="mode" hidden aria-hidden />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <head>
+      <section class="welcoming">
+        <div class="container">
+          <img src="./imgs/main.png" alt="" class="mainImg" />
+          <h1>Welcome to My Way</h1>
+          <p class="intro">
+            I'm Abdelrahman Mohamed <br />
+            and I'm a Fullstack <span class="typing"></span>
+          </p>
+        </div>
+      </section>
+    </head>
+    <section class="about">
+      <div class="container">
+        <div
+          class="skills text-center d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2>My Skills</h2>
+          <div class="skills-icons d-flex justify-content-center">
+            <a href="#"><i class="fa-brands fa-html5"></i></a>
+            <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+            <a href="#"><i class="fa-brands fa-js"></i></a>
+            <a href="#"><i class="fa-brands fa-bootstrap"></i></a>
+            <a href="#"><i class="fa-solid fa-database"></i></a>
+            <a href="#"><i class="fa-brands fa-python"></i></a>
+            <a href="#"><i class="fa-brands fa-git-alt"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linux"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="projects-header text-center">
+          <h2>My <span>Projects</span></h2>
+          <p>Here are some of my <span>projects</span> that I have worked on.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/1.png" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">CRUD</h5>
+                <p class="card-text">a crud system made to mimic how a store site would oprate</p>
+                <a href="https://abdhsrag.github.io/Cruds/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/2.png" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">a resturant page</h5>
+                <p class="card-text">a simple resturant page made to mimic how to make a page with dark mode</p>
+                <a href="https://abdhsrag.github.io/darkmood/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/3.png" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Rock Paper Scissors</h5>
+                <p class="card-text">the game of Rock-Paper-Scissors where you can play againt the pc</p>
+                <a href="https://abdhsrag.github.io/Rock-Paper-Scissors/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/4.png" class="card-img-top" alt="Project 4" />
+              <div class="card-body">
+                <h5 class="card-title">landing page</h5>
+                <p class="card-text">a landing page for a solar power company</p>
+                <a href="https://abdhsrag.github.io/landing-page/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/5.png" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <h5 class="card-title">to do list</h5>
+                <p class="card-text">a to do list with a modern feel and calming background</p>
+                <a href="https://abdhsrag.github.io/to-do-list/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/6.png" class="card-img-top" alt="Project 6" />
+              <div class="card-body">
+                <h5 class="card-title">landing page</h5>
+                <p class="card-text">a landing page for an interior design company</p>
+                <a href="https://abdhsrag.github.io/landing-page-for-interior-design-company/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/7.png" class="card-img-top" alt="Project 7" />
+              <div class="card-body">
+                <h5 class="card-title">anamil gallery</h5>
+                <p class="card-text">a calming and simple animal gallery</p>
+                <a href="https://abdhsrag.github.io/gallery/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <img src="./imgs/8.png" class="card-img-top" alt="Project 8" />
+              <div class="card-body">
+                <h5 class="card-title">small shop</h5>
+                <p class="card-text">a small online shop with login and cart and a simple design</p>
+                <a href="https://abdhsrag.github.io/shopping-cart/" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="contact">
+      <div class="container">
+        <h2 class="footer-title">contact me</h2>
+        <div class="footer-content text-center">
+          <p>&copy; 2023 My Way. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="https://github.com/Abdhsrag" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdelrahmanmohamedosama" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/201277116459" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
